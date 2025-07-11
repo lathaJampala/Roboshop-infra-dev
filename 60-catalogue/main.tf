@@ -48,11 +48,11 @@ resource "terraform_data" "catalogue" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo yum install nginx -y",
-      "sudo systemctl enable nginx",
-      "sudo systemctl start nginx",
-      #"chmod +x /tmp/catalogue.sh",
-      #"sudo sh /tmp/catalogue.sh catalogue ${var.environment}"
+      # "sudo yum install nginx -y",
+      # "sudo systemctl enable nginx",
+      # "sudo systemctl start nginx",
+      "chmod +x /tmp/catalogue.sh",
+      "sudo sh /tmp/catalogue.sh catalogue ${var.environment}"
     ]
   }
 }
