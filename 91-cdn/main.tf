@@ -12,7 +12,7 @@ resource "aws_cloudfront_distribution" "roboshop" {
 
   enabled             = true
 
-  aliases = ["latha.shop"]
+  aliases = ["cdn.latha.shop"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
