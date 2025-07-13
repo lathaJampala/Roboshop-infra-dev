@@ -1,5 +1,8 @@
 variable "components" {
     default = {
+        component = {
+            rule_priority = 10
+        }
         user = {
             rule_priority = 20
         }
